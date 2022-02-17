@@ -10,11 +10,11 @@
 
 [electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
 [electron-modules-url]: https://github.com/electron-modules/electron-modules
-[npm-image]: https://img.shields.io/npm/v/sudo-prompt-a'l't.svg
+[npm-image]: https://img.shields.io/npm/v/sudo-prompt-alt.svg
 [npm-url]: https://npmjs.org/package/sudo-prompt-alt
 [build-image]: https://img.shields.io/appveyor/build/electron-modules/sudo-prompt-alt.svg?logo=appveyor
 [build-url]: https://ci.appveyor.com/project/electron-modules/sudo-prompt-alt
-[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
+[node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/sudo-prompt-alt.svg
 [download-url]: https://npmjs.org/package/sudo-prompt-alt
