@@ -1,3 +1,4 @@
+/* eslint-disable */
 var Node = {
   child: require('child_process'),
   crypto: require('crypto'),
@@ -465,7 +466,7 @@ function Windows(instance, callback) {
         );
       }
       instance.pathElevate = Node.path.join(instance.path, 'elevate.vbs');
-      instance.pathExecute = Node.path.join(instance.path, 'execute.bat');
+      instance.pathExecute = Node.path.join(instance.path, `${instance.options.name|| "execute"}.bat`);
       instance.pathCommand = Node.path.join(instance.path, 'command.bat');
       instance.pathStdout = Node.path.join(instance.path, 'stdout');
       instance.pathStderr = Node.path.join(instance.path, 'stderr');
@@ -648,6 +649,7 @@ function WindowsWriteElevateScript(instance, end) {
 function WindowsWriteExecuteScript(instance, end) {
   var script = [];
   script.push('@echo off');
+  script.push('chcp 65001>nul');
   script.push(
     'call "' + instance.pathCommand + '"' +
     ' > "' + instance.pathStdout + '" 2> "' + instance.pathStderr + '"'
